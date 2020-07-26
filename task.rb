@@ -5,7 +5,8 @@ def q1
   names = ["田中", "佐藤", "佐々木", "高橋"]
 
   # 以下に回答を記載
-
+  names += ["斎藤"]
+  puts names
 end
 
 def q2
@@ -13,14 +14,21 @@ def q2
   array2 = ["bird", "bat", "tiger"]
 
   # 以下に回答を記載
-
+  array = array1 + array2
+  puts array
 end
 
 def q3
   numbers = [1, 5, 8, 10, 2, 3, 2, 3, 3, 1, 4, 5, 9]
 
   # 以下に回答を記載
-
+  count = 0
+  numbers.each do |num|
+    if num == 3
+      count += 1
+    end
+  end
+  puts "3は #{count} 個あります。"
 end
 
 def q4
