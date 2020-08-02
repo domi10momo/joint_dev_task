@@ -21,13 +21,7 @@ def q3
   numbers = [1, 5, 8, 10, 2, 3, 2, 3, 3, 1, 4, 5, 9]
 
   # 以下に回答を記載
-  count = 0
-  numbers.each do |num|
-    if num == 3
-      count += 1
-    end
-  end
-  puts "3は #{count} 個あります。"
+  puts "3は #{numbers.count(3)} 個あります。"
 end
 
 def q4
