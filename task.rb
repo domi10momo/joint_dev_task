@@ -46,7 +46,13 @@ def q5
   array2 = [1, 5, 8, 10]
 
   # 以下に回答を記載
+  def isArrayEmpty(array)
+    puts “true“ if array.empty?
+    puts “false“ unless array.empty?
+  end
 
+  isArrayEmpty(array1)
+  isArrayEmpty(array2)
 end
 
 def q6
