@@ -28,7 +28,7 @@ def q4
   sports = ["サッカー", "フットサル", nil, "野球", "バスケ", nil, "バレー"]
 
   # 以下に回答を記載
-　sports.delete(nil)
+　sports.compact!
 
   # 以下は変更しないで下さい
   p sports
@@ -54,7 +54,7 @@ def q6
   # 以下に回答を記載
   numbers2 = Array.new
   numbers1.each do |number|
-    numbers2.push(number * 10)
+    numbers2 << number * 10
   end
   p numbers2
 end
