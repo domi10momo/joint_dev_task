@@ -86,7 +86,10 @@ def q10
   foods = %w(いか たこ うに しゃけ うにぎり うに軍艦 うに丼)
 
   # 以下に回答を記載
-
+  key = "うに"
+  foods.each do |food|
+    puts (food.include? key) ? "#{food} 好物です" : "#{food} まあまあ好きです"
+  end
 end
 
 def q11
