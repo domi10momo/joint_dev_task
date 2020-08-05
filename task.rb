@@ -77,8 +77,8 @@ def q9
   names = ["田中", "佐藤", "佐々木", "高橋"]
 
   # 以下に回答を記載
-  names.each_with_index { | value, index |
-    puts "会員No.#{index + 1} #{value}さん"
+  names.each.with_index(1) { | value, index |
+    puts "会員No.#{index} #{value}さん"
   }
 end
 
@@ -86,9 +86,8 @@ def q10
   foods = %w(いか たこ うに しゃけ うにぎり うに軍艦 うに丼)
 
   # 以下に回答を記載
-  key = "うに"
   foods.each do |food|
-    puts (food.include? key) ? "#{food} 好物です" : "#{food} まあまあ好きです"
+    puts (food.include? "うに") ? "#{food} 好物です" : "#{food} まあまあ好きです"
   end
 end
 
@@ -98,8 +97,8 @@ def q11
   # 以下に回答を記載
   puts "ユーザの趣味一覧"
   sports.flatten!.uniq!
-  sports.each_with_index { | value, index |
-    puts "No#{index + 1} #{value}"
+  sports.each.with_index(1) { | value, index |
+    puts "No#{index} #{value}"
   }
 end
 
