@@ -39,20 +39,16 @@ def q5
   array2 = [1, 5, 8, 10]
 
   # 以下に回答を記載
-  def isArrayEmpty(array)
-    puts “true“ if array.empty?
-    puts “false“ unless array.empty?
-  end
-
-  isArrayEmpty(array1)
-  isArrayEmpty(array2)
+  puts array1.empty?
+  puts array2.empty?
 end
 
 def q6
   numbers1 = [1, 2, 3, 4, 5]
 
   # 以下に回答を記載
-  p numbers1.map { |number| number * 10 }
+  number2 = numbers1.map { |number| number * 10 }
+  p number2
 end
 
 def q7
@@ -81,7 +77,9 @@ def q9
   names = ["田中", "佐藤", "佐々木", "高橋"]
 
   # 以下に回答を記載
-
+  names.each_with_index { | value, index |
+    puts "会員No.#{index + 1} #{value}さん"
+  }
 end
 
 def q10
