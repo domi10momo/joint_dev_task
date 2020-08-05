@@ -107,7 +107,7 @@ def q12
   data = { user: { name: "satou", age: 33 } }
 
   # 以下に回答を記載
-
+  puts data[:user][:name]
 end
 
 def q13
