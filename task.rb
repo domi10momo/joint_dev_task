@@ -121,7 +121,8 @@ def q14
   data = { name: "satou", age: 33, address: "saitama", hobby: "soccer", email: "hoge@fuga.com" }
 
   # 以下に回答を記載
-  
+  data_array = data.keys.to_a
+  p data_array
 end
 
 def q15
