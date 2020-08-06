@@ -96,8 +96,7 @@ def q11
 
   # 以下に回答を記載
   puts "ユーザの趣味一覧"
-  sports.flatten!.uniq!
-  sports.each.with_index(1) { | value, index |
+  sports.flatten!.uniq!.each.with_index(1) { | value, index |
     puts "No#{index} #{value}"
   }
 end
@@ -121,7 +120,7 @@ def q14
   data = { name: "satou", age: 33, address: "saitama", hobby: "soccer", email: "hoge@fuga.com" }
 
   # 以下に回答を記載
-  data_array = data.keys.to_a
+  data_array = data.keys
   p data_array
 end
 
@@ -144,7 +143,9 @@ def q16
   ]
 
   # 以下に回答を記載
-
+  users.each do |user|
+    puts "私の名前は#{user[:name]}です。年齢は#{user[:age]}歳です。"
+  end
 end
 
 class UserQ17
